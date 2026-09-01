@@ -1084,6 +1084,7 @@ inject:
     - <script src="/js/random-bg.js"></script>
     - <script src="/js/sakura.js"></script>
     - <script src="/js/rainbow-text.js"></script>
+    - <script src="/js/quotes.js"></script>
     - <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
     - <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
     - <meting-js server="netease" type="playlist" id="3173908477" fixed="true" autoplay="false" volume="0.4" theme="#FFC9A6"></meting-js>

@@ -295,7 +295,7 @@ aside:
       text: 游戏存档
       link: /archives/
   card_announcement:
-    enable: true
+    enable: false
     content: 欢迎来到日落大王的地盘～ 这里是游戏与牢骚的集散地。
   card_recent_post:
     enable: true

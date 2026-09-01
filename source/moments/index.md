@@ -31,19 +31,6 @@ type: moments
   </div>
 </div>
 
-<!-- 说说 2 -->
-<div class="moment-item">
-  <div class="moment-time">2026-09-01 08:00</div>
-  <div class="moment-content">
-    凌晨又打了三把排位，赢一把输两把，心态炸裂。<br>
-    但说真的，无畏契约这游戏手感来了就是爽。
-  </div>
-  <div class="moment-tags">
-    <span class="moment-tag">游戏</span>
-    <span class="moment-tag">无畏契约</span>
-  </div>
-</div>
-
 </div>
 
 </div>

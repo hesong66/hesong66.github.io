@@ -1,6 +1,9 @@
 /* === 日落大王 - 文字配色优化 === */
 
-html,body{background:transparent !important;}
+/* === 基础底色：防止 PJAX 翻页白屏闪烁 === */
+html{background:#1a1420 !important;}
+body{background:transparent !important;}
+#web_bg{display:none !important;}
 
 .avatar-img{display:none !important;}
 

@@ -1,0 +1,241 @@
+/* === 日落大王 - 文字配色优化 === */
+
+html,body{background:transparent !important;}
+
+.avatar-img{display:none !important;}
+
+#page-header,.page-header,#page-header::before,#page-header::after,#nav{
+  background:transparent !important;background-image:none !important;
+}
+#page-header.full_page{background:transparent !important;}
+.not-top-img{background:transparent !important;}
+#random_bg{filter:blur(10px);transform:scale(1.05);}
+
+/* === 内容区半透明卡片 === */
+.layout_page{
+  background:rgba(20,18,30,0.55) !important;
+  backdrop-filter:blur(6px);
+  border-radius:16px;
+}
+
+/* === 文章列表卡片 === */
+#recent-posts .recent-post-item{
+  background:rgba(30,26,45,0.5) !important;
+  border-radius:14px;
+  border:1px solid rgba(255,126,103,0.15);
+}
+.recent-post-info .article-meta-wrap{color:#FF9A8C !important;}
+.recent-post-info .article-meta-wrap .article-meta__categories{
+  background:rgba(255,126,103,0.25) !important;
+}
+.recent-post-info .article-meta-wrap a{color:#FFB8A0 !important;}
+.recent-post-info .content{color:#E8D5D0 !important;}
+
+/* === 文章正文 === */
+#article-container .post-title{
+  text-shadow:0 2px 12px rgba(0,0,0,0.6);
+}
+#article-container p{color:#E8DDD8 !important;line-height:1.9;}
+#article-container h1,#article-container h2,#article-container h3{
+  color:#FFC9A6 !important;
+  text-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+#article-container a{
+  color:#FF9A8C !important;
+  border-bottom:1px solid rgba(255,154,140,0.4);
+}
+#article-container a:hover{
+  color:#FFD4C2 !important;
+  border-bottom-color:#FFD4C2;
+}
+#article-container blockquote{
+  background:rgba(255,126,103,0.12) !important;
+  border-left:4px solid #FF7E67 !important;
+  color:#E8D5D0 !important;
+}
+#article-container code{
+  background:rgba(255,126,103,0.18) !important;
+  color:#FFC9A6 !important;
+  border-radius:4px;padding:2px 6px;
+}
+#article-container pre{
+  background:rgba(15,12,25,0.7) !important;
+  border-radius:8px;
+}
+#article-container pre code{
+  background:transparent !important;
+  color:#E8DDD8 !important;
+}
+
+/* === 侧边栏卡片 === */
+.card-widget{
+  background:rgba(30,26,45,0.5) !important;
+  border-radius:14px;
+  border:1px solid rgba(255,126,103,0.1);
+}
+.card-widget .item-headline i,.card-widget .item-headline span{color:#FFC9A6 !important;}
+.card-widget a{color:#FFB8A0 !important;}
+.card-widget a:hover{color:#FFD4C2 !important;}
+.card-announcement{background:rgba(255,126,103,0.1) !important;}
+
+/* === 站点标题（由 rainbow-text.js 随机配色） === */
+#site-title{
+  text-shadow:0 2px 20px rgba(0,0,0,0.4);
+}
+#site-subtitle,.typewriter,#subtitle{
+  text-shadow:0 1px 10px rgba(0,0,0,0.5);
+}
+
+/* === 导航栏 === */
+#nav .menu-item a{
+  text-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+#nav .menu-item a:hover{color:#FF7E67 !important;}
+
+/* === 页脚 === */
+#footer{
+  background:rgba(15,12,25,0.6) !important;
+  backdrop-filter:blur(4px);
+}
+#footer,#footer a{color:#FFB8A0 !important;}
+
+/* === 分页器 === */
+#pagination .page-number,#pagination a{
+  color:#FFD4C2 !important;
+  background:rgba(255,126,103,0.15) !important;
+  border:1px solid rgba(255,126,103,0.2);
+}
+#pagination .current{
+  background:rgba(255,126,103,0.4) !important;
+  color:#FFF !important;
+}
+
+/* === 归档页 === */
+.article-sort-item-title{color:#FFD4C2 !important;}
+.article-sort-item-time{color:#FF9A8C !important;}
+
+/* === TOC 目录 === */
+#card-toc .toc-content a{color:#FFB8A0 !important;}
+#card-toc .toc-content a:hover{color:#FFD4C2 !important;}
+
+/* === 滚动条 === */
+::-webkit-scrollbar-thumb{
+  background:rgba(255,126,103,0.5) !important;
+  border-radius:6px;
+}
+
+/* === Live2D 看板娘 === */
+#waifu{
+  bottom:80px !important;
+  left:10px !important;
+}
+#waifu-tips{
+  background:rgba(30,26,45,0.85) !important;
+  border:1px solid rgba(255,126,103,0.3) !important;
+  border-radius:12px !important;
+  color:#FFD4C2 !important;
+}
+#waifu-toggle{
+  background:rgba(30,26,45,0.8) !important;
+  color:#FFD4C2 !important;
+  border-radius:12px !important;
+}
+#waifu-toggle.waifu-toggle-active{
+  background:rgba(255,126,103,0.4) !important;
+}
+
+/* === 说说/动态页 === */
+.moments-page{
+  max-width:720px;
+  margin:0 auto;
+  padding:20px 0;
+}
+.moments-header h1{
+  color:#FFD4C2 !important;
+  text-shadow:0 2px 12px rgba(0,0,0,0.6) !important;
+}
+.moments-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin-top:30px;
+}
+.moment-item{
+  background:rgba(30,26,45,0.55) !important;
+  backdrop-filter:blur(6px);
+  border-radius:14px;
+  border:1px solid rgba(255,126,103,0.15);
+  padding:20px 24px;
+  transition:transform 0.3s ease,box-shadow 0.3s ease;
+}
+.moment-item:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 30px rgba(255,126,103,0.15);
+}
+.moment-time{
+  color:#FF9A8C !important;
+  font-size:13px;
+  margin-bottom:10px;
+  font-weight:500;
+}
+.moment-content{
+  color:#E8DDD8 !important;
+  line-height:1.9;
+  font-size:15px;
+}
+.moment-tags{
+  margin-top:12px;
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.moment-tag{
+  display:inline-block;
+  padding:3px 12px;
+  background:rgba(255,126,103,0.2);
+  color:#FFD4C2 !important;
+  border-radius:20px;
+  font-size:12px;
+  border:1px solid rgba(255,126,103,0.25);
+}
+
+/* === 友情链接页 === */
+.flink-list-item{
+  background:rgba(30,26,45,0.5) !important;
+  border-radius:14px;
+  border:1px solid rgba(255,126,103,0.15);
+  overflow:hidden;
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.flink-list-item:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 24px rgba(255,126,103,0.2);
+}
+.flink-item-name{
+  color:#FFD4C2 !important;
+  text-shadow:0 1px 6px rgba(0,0,0,0.5);
+}
+.flink-item-desc{
+  color:#FF9A8C !important;
+}
+.flink-list-item img{
+  border-radius:50%;
+}
+#article-container .flink-list-item a{
+  border-bottom:none !important;
+}
+
+/* === 评论区（Giscus） === */
+#post-comment,.comment-head{
+  background:rgba(20,18,30,0.55) !important;
+  backdrop-filter:blur(6px);
+  border-radius:16px;
+  padding:20px !important;
+}
+.comment-head .comment-headline i,.comment-head .comment-headline span{
+  color:#FFC9A6 !important;
+}
+#giscus-wrap iframe{
+  border:none !important;
+  border-radius:12px;
+}

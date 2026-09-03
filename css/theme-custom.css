@@ -14,6 +14,12 @@ body{background:transparent !important;}
 .not-top-img{background:transparent !important;}
 #random_bg{filter:blur(10px);transform:scale(1.05);}
 
+/* 视频背景兜底：播放失败/超时时的渐变背景，避免黑屏 */
+body.bg-fallback,
+body.bg-fallback #web_bg{
+  background:linear-gradient(160deg,#2b1b3a 0%,#1a1420 45%,#3a1f2e 100%) !important;
+}
+
 /* === 内容区半透明卡片 === */
 .layout_page{
   background:rgba(20,18,30,0.55) !important;
@@ -241,4 +247,46 @@ body{background:transparent !important;}
 #giscus-wrap iframe{
   border:none !important;
   border-radius:12px;
+}
+
+/* === 标签云 / 标签 chip === */
+#tag .tag-cloud a{
+  display:inline-block;
+  padding:6px 16px;
+  margin:6px 6px 0 0;
+  background:rgba(30,26,45,0.55);
+  color:#FFC9A6 !important;
+  border:1px solid rgba(255,126,103,0.2);
+  border-radius:20px;
+  text-decoration:none !important;
+  transition:all .25s ease;
+}
+#tag .tag-cloud a:hover{
+  background:rgba(255,126,103,0.25);
+  color:#FFF !important;
+  border-color:#FF7E67;
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(255,126,103,0.25);
+}
+#article-container .article-meta__tags a,
+.recent-post-info .article-meta__tags a{
+  color:#FFC9A6 !important;
+  text-decoration:none !important;
+}
+
+/* === 移动端优化：降低 GPU 开销，提升渲染速度 === */
+@media screen and (max-width:768px){
+  #random_bg{
+    filter:blur(4px);           /* 手机 GPU 撑不住 10px 大模糊，降到 4px */
+    transform:scale(1.1);
+  }
+  .layout_page,
+  #post-comment,.comment-head,
+  .moment-item{
+    backdrop-filter:blur(3px);  /* 移动端 backdrop-filter 很吃性能 */
+  }
+  #page-header.site-page{
+    height:auto !important;
+    padding:60px 0 30px !important;
+  }
 }
